@@ -1,5 +1,4 @@
 # Stocks-Analysis
-VBA for analysing in Excel
 ## Overview
 In this challenge we are using VBA for analysing a dataset of 12 different green energies stocks to determine whether or not is recomendable to invest in one of them, the clients of the user have invested in the company DQ, so a further analysis focused in this company needs to be done to determine if this was a good decision. 
 ## Results
@@ -40,3 +39,23 @@ Original code runtime    |  Refactored code runtime
 Original code runtime    |  Refactored code runtime  
 :-------------------------:|:-------------------------:
 ![Time original code](./Resources/Original_2018_Time.PNG)    | ![Time refactored code](./Resources/VBA_Challenge_2018.PNG) 
+
+## Summary
+
+### What are the advantages and disadvantages of refactoring code?
+#### Pros:
+* Simpler and more efficient code.
+* Faster runtime.
+* Improving code readability.
+* Easier to find bugs.
+* Easier to add new capabilities to the code.
+#### Cons:
+* Additional effort.
+* Time consuming.
+* Prone to error.
+
+### How do these pros and cons apply to refactoring the original VBA script?
+The refactoring permormed on the code helped it run faster, 0.584 seconds in the year 2017 and 0.872 seconds in 2018, which may not look like a lot of improvement, but if the code was applied to a much larger dataset, those miliseconds could transform into minutes saving time for other activities. The main disadvantage is that you need to come with a solution to perform this improvements, and sometimes your idea may not be as efficient as you thought.
+
+## Observations
+I want to point out one observation of the code used for this activity, the way that it finds the starting prices and ending prices works only because the dataset is ordered, so as a recommendation I would say that you need to order the dataset before performing the analysis or develop a new way of looking for the date and the ticker index as future work.
